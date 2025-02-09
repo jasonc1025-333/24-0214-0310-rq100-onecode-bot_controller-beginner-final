@@ -1263,7 +1263,7 @@ basic.forever(function () {
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
     }
-    if (false) {
+    if (true) {
         quest_Note_2.quest_Show_String_For_Note_Small_Func(
         "GroupChannel=1 (default)"
         )
