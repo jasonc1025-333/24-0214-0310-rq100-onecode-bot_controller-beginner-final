@@ -1246,7 +1246,7 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (false) {
-        quest_Dashboard.quest_Send_DataOfBot_ToXrayDashboardOfMb_Func(
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         randint(0, 3),
         true,
         quest_Debug_Show_Enum.Dashboard_OLED
@@ -1257,7 +1257,7 @@ basic.forever(function () {
         quest_Note_2.quest_Show_String_For_Note_Small_Func(
         "GroupChannel=1 (default)"
         )
-        quest_Dashboard.quest_Send_DataOfBot_ToXrayDashboardOfMb_Func(
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
         true,
         quest_Debug_Show_Enum.Dashboard_OLED
