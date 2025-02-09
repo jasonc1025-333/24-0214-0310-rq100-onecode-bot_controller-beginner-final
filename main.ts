@@ -1416,7 +1416,7 @@ basic.forever(function () {
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
         true,
-        quest_Debug_Show_Enum.Dashboard_OLED
+        quest_Debug_Show_Enum.Off
         )
     }
 })
