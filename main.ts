@@ -1252,30 +1252,6 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (false) {
-        quest_Note_2.quest_Show_String_For_Note_Small_Func(
-        "GroupChannel=0to3"
-        )
-        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
-        randint(0, 3),
-        true,
-        quest_Debug_Show_Enum.Dashboard_OLED
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        quest_Note_2.quest_Show_String_For_Note_Small_Func(
-        "GroupChannel=1 (default)"
-        )
-        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
-        1,
-        true,
-        quest_Debug_Show_Enum.Dashboard_OLED
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
-    }
-})
-basic.forever(function () {
     quest_Note_6.quest_Show_String_For_Note_Big_Func(
     ""
     )
@@ -1375,6 +1351,72 @@ setup_BotAndController_Func()
         }
         quest_Note_6.quest_Show_String_For_Note_Big_Func(
         "Level 2: Variables_n_Constants_Yes"
+        )
+    }
+})
+basic.forever(function () {
+    if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "GroupChannel=0to3"
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        randint(0, 3),
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
+    }
+    if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "Aa-HUJ: GroupChannel=1 (default)"
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        1,
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
+    }
+    if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "AAa-HUJ: GroupChannel=1 (default)"
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        1,
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
+    }
+    if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "a HUJ GroupChannel=1 (default)"
+        )
+        quest_Dashboard.quest_Send_DataOfBot_ToXrayDashboardOfMb_Func(
+        "HiJesus",
+        quest_Debug_Show_Enum.Off
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
+    }
+    if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "AAA_a TYJ: GroupChannel=1 (default)"
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        1,
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(20, quest_Time_Units_Enum.Milliseconds)
+    }
+    if (true) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "AAA_a TYJ: GroupChannel=1 (default)"
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        1,
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
         )
     }
 })
