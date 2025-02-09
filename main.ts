@@ -747,7 +747,7 @@ setup_BotAndController_Func()
     if (true) {
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         network_GroupChannel_MyBotAndController_Base0_Int,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
     }
@@ -1360,8 +1360,13 @@ basic.forever(function () {
         "GroupChannel=0to3"
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        network_GroupChannel_MyBotAndController_Base0_Int,
+        quest_Toggle_OnOff_Enum.On,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         randint(0, 3),
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
@@ -1372,7 +1377,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
@@ -1383,7 +1388,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
@@ -1404,7 +1409,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(20, quest_Time_Units_Enum.Milliseconds)
@@ -1415,7 +1420,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Off
         )
     }
