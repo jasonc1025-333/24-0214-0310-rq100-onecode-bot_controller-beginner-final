@@ -745,6 +745,13 @@ if (true) {
 setup_BotAndController_Func()
     }
     if (true) {
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        network_GroupChannel_MyBotAndController_Base0_Int,
+        true,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+    }
+    if (true) {
         quest_Note_4.quest_Show_String_For_Note_Small_Func(
         "AAA-1: Next Block_Code Moddable..."
         )
@@ -1246,6 +1253,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (false) {
+        quest_Note_2.quest_Show_String_For_Note_Small_Func(
+        "GroupChannel=0to3"
+        )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         randint(0, 3),
         true,
@@ -1253,7 +1263,7 @@ basic.forever(function () {
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
     }
-    if (true) {
+    if (false) {
         quest_Note_2.quest_Show_String_For_Note_Small_Func(
         "GroupChannel=1 (default)"
         )
