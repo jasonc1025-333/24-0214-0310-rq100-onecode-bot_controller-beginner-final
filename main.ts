@@ -1469,6 +1469,16 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    if (true) {
+        quest_Dashboard.quest_Send_DataOfBot_ToXrayDashboardOfMb_Func(
+        randint(0, 3),
+        quest_Toggle_OnOff_Enum.On,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
+    }
+})
+basic.forever(function () {
     quest_Note_6.quest_Show_String_For_Note_Big_Func(
     ""
     )
