@@ -725,7 +725,7 @@ let servoArm_DEFAULT_DEGREES_INT = 0
 let network_GroupChannel_MyBotAndController_Base0_Int = 0
 if (true) {
     quest_Note_1.quest_Show_String_For_Note_Big_Func(
-    "©️ 2024 Quest Institute. All rights reserved."
+    "©️ 2025 Quest Institute. All rights reserved."
     )
     quest_Note_3.quest_Show_String_For_Note_Big_Func(
     "Bot & Controller_Joystick: All_in_One Code"
