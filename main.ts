@@ -1414,7 +1414,7 @@ basic.forever(function () {
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(20, quest_Time_Units_Enum.Milliseconds)
     }
-    if (true) {
+    if (false) {
         quest_Note_2.quest_Show_String_For_Note_Small_Func(
         "AAA_a TYJ: GroupChannel=1 (default)"
         )
