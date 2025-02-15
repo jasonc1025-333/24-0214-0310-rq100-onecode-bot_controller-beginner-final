@@ -63,7 +63,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.Heart2)
+            quest_Dashboard.showIcon2(IconNames2.Happy2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -91,7 +91,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
+            quest_Dashboard.showIcon2(IconNames2.Yes2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -119,6 +119,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.Heart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -146,6 +147,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -173,6 +175,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.No2)
             // //jwc o roboQuest.powerMotorsViaBlueRedBlackPins(PortGroup_BlueRedBlack__PortIds__Enum.S1_MotorLeft__S0_MotorRight, motor_Power_ZERO_INT, motor_Power_ZERO_INT)
             quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
             quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
