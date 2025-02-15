@@ -63,6 +63,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.Heart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -90,6 +91,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -724,6 +726,12 @@ let servoArm_UP_MAX_DEGREES_INT = 0
 let servoArm_DEFAULT_DEGREES_INT = 0
 let network_GroupChannel_MyBotAndController_Base0_Int = 0
 if (true) {
+    quest_Dashboard.showIcon2(IconNames2.Happy2)
+    quest_Dashboard.showIcon2(IconNames2.No2)
+    quest_Dashboard.showIcon2(IconNames2.Heart2)
+    quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
+}
+if (true) {
     quest_Note_1.quest_Show_String_For_Note_Big_Func(
     "©️ 2024 Quest Institute. All rights reserved."
     )
@@ -744,10 +752,10 @@ if (true) {
         setup_Network_Func()
 setup_BotAndController_Func()
     }
-    if (true) {
+    if (false) {
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         network_GroupChannel_MyBotAndController_Base0_Int,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
     }
@@ -1361,7 +1369,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         randint(0, 3),
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
@@ -1372,7 +1380,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
@@ -1383,7 +1391,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(5, quest_Time_Units_Enum.Seconds)
@@ -1404,7 +1412,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Dashboard_OLED
         )
         quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(20, quest_Time_Units_Enum.Milliseconds)
@@ -1415,7 +1423,7 @@ basic.forever(function () {
         )
         quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
         1,
-        true,
+        quest_Toggle_OnOff_Enum.On,
         quest_Debug_Show_Enum.Off
         )
     }
