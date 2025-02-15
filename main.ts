@@ -63,6 +63,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.Heart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -90,6 +91,7 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
+            quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
