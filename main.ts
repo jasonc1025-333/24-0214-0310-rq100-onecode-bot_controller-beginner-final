@@ -63,7 +63,13 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.Happy2)
+            images.createImage(`
+                . . # . .
+                . # # # .
+                . . # . .
+                . . # . .
+                . . . . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -91,7 +97,13 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.Yes2)
+            images.createImage(`
+                . . . . .
+                . . # . .
+                . . # . .
+                . # # # .
+                . . # . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -119,7 +131,13 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.Heart2)
+            images.createImage(`
+                . . . . .
+                . # . . .
+                # # # # .
+                . # . . .
+                . . . . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -147,7 +165,13 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.SmallHeart2)
+            images.createImage(`
+                . . . . .
+                . . . # .
+                . # # # #
+                . . . # .
+                . . . . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Big_Func(
             "B-2: Next Block_Code Moddable"
             )
@@ -175,7 +199,13 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
                 . . . . .
                 `)
         } else {
-            quest_Dashboard.showIcon2(IconNames2.No2)
+            images.createImage(`
+                . . . . .
+                . . . . .
+                . . # . .
+                . . . . .
+                . . . . .
+                `).showImage(0, 0)
             // //jwc o roboQuest.powerMotorsViaBlueRedBlackPins(PortGroup_BlueRedBlack__PortIds__Enum.S1_MotorLeft__S0_MotorRight, motor_Power_ZERO_INT, motor_Power_ZERO_INT)
             quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
             quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
@@ -1473,12 +1503,14 @@ basic.forever(function () {
                                     . . . . .
                                     `)
                             } else {
+                                images.createImage(`
+                                    . . # . .
+                                    . # # # .
+                                    . . # . .
+                                    . . # . .
+                                    . . . . .
+                                    `).showImage(0, 0)
                                 radio.sendString("forward")
-                                screen_Clear_Func()
-                                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                                "LED 5x5 Screen: (0,0) @ Upper_Left -&- (4,4) @ Bottom_Right"
-                                )
-                                screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(2, 0)
                             }
                         }
                     } else if (controller__Polar_OriginAtCenter__AngleDegree__Int == 270) {
@@ -1498,12 +1530,14 @@ basic.forever(function () {
                                     . . # . .
                                     `)
                             } else {
+                                images.createImage(`
+                                    . . . . .
+                                    . . # . .
+                                    . . # . .
+                                    . # # # .
+                                    . . # . .
+                                    `).showImage(0, 0)
                                 radio.sendString("backward")
-                                screen_Clear_Func()
-                                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                                "LED 5x5 Screen: (0,0) @ Upper_Left -&- (4,4) @ Bottom_Right"
-                                )
-                                screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(2, 4)
                             }
                         }
                     } else if (controller__Polar_OriginAtCenter__AngleDegree__Int == 180) {
@@ -1523,12 +1557,14 @@ basic.forever(function () {
                                     . . . . .
                                     `)
                             } else {
+                                images.createImage(`
+                                    . . . . .
+                                    . # . . .
+                                    # # # # .
+                                    . # . . .
+                                    . . . . .
+                                    `).showImage(0, 0)
                                 radio.sendString("left")
-                                screen_Clear_Func()
-                                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                                "LED 5x5 Screen: (0,0) @ Upper_Left -&- (4,4) @ Bottom_Right"
-                                )
-                                screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(0, 2)
                             }
                         }
                     } else if (controller__Polar_OriginAtCenter__AngleDegree__Int == 0 || controller__Polar_OriginAtCenter__AngleDegree__Int == 360) {
@@ -1548,12 +1584,14 @@ basic.forever(function () {
                                     . . . . .
                                     `)
                             } else {
+                                images.createImage(`
+                                    . . . . .
+                                    . . . # .
+                                    . # # # #
+                                    . . . # .
+                                    . . . . .
+                                    `).showImage(0, 0)
                                 radio.sendString("right")
-                                screen_Clear_Func()
-                                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                                "LED 5x5 Screen: (0,0) @ Upper_Left -&- (4,4) @ Bottom_Right"
-                                )
-                                screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(4, 2)
                             }
                         }
                     } else {
@@ -1572,6 +1610,13 @@ basic.forever(function () {
                     }
                 }
             } else if (controller__Polar_OriginAtCenter__MagnitudePixel__Int < controller__Polar_OriginAtCenter__MagnitudePixel__IdleDeadzone_Max512__INT) {
+                images.createImage(`
+                    . . . . .
+                    . . . . .
+                    . . # . .
+                    . . . . .
+                    . . . . .
+                    `).showImage(0, 0)
                 quest_Note_1.quest_Show_String_For_Note_Big_Func(
                 "Motion: Not"
                 )
@@ -1580,10 +1625,7 @@ basic.forever(function () {
                 )
                 radio.sendString("stop")
                 if (true) {
-                    quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                    "LED 5x5 Screen: (0,0) @ Upper_Left -&- (4,4) @ Bottom_Right"
-                    )
-                    screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(2, 2)
+                	
                 }
             }
             if (true) {
