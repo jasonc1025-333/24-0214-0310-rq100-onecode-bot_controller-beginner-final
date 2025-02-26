@@ -132,6 +132,13 @@ function bot_Servo_Arms_Fn (network_ReceivedString_FromControllerJoystick_Str_Pa
                 . . . . .
                 `)
         } else {
+            images.createImage(`
+                . . . # #
+                . . # . .
+                # # . . .
+                . . . . .
+                . . . . .
+                `).showImage(0, 0)
             quest_Note_1.quest_Show_String_For_Note_Small_Func(
             "If [0|360] is jittery, insure battery at 75% power min."
             )
@@ -168,6 +175,13 @@ function bot_Servo_Arms_Fn (network_ReceivedString_FromControllerJoystick_Str_Pa
                 . . . # #
                 `)
         } else {
+            images.createImage(`
+                . . . . .
+                . . . . .
+                # # . . .
+                . . # . .
+                . . . # #
+                `).showImage(0, 0)
             quest_Note_1.quest_Show_String_For_Note_Small_Func(
             "If [0|360] is jittery, insure battery at 75% power min."
             )
@@ -207,6 +221,13 @@ function bot_Servo_Motors_Turbo_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
+            images.createImage(`
+                . . # . .
+                . # # # .
+                # . # . #
+                . . # . .
+                . . # . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Small_Func(
             "Next Block_Code Moddable: Forward-Max: Button-F"
             )
@@ -244,6 +265,13 @@ function bot_Servo_Motors_Turbo_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 `)
         } else {
+            images.createImage(`
+                . . # . .
+                . . . # .
+                # # # # #
+                . . . # .
+                . . # . .
+                `).showImage(0, 0)
             quest_Note_2.quest_Show_String_For_Note_Small_Func(
             "Next Block_Code Moddable: Turn-Max: Button-E"
             )
@@ -686,6 +714,13 @@ input.onButtonPressed(Button.B, function () {
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType.down, function () {
     // //jwc o if (device_Type_Controller_Bool && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
     if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Controller_Joystick__ID_INT && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
+        images.createImage(`
+            . . . # #
+            . . # . .
+            # # . . .
+            . . . . .
+            . . . . .
+            `).showImage(0, 0)
         radio.sendString("arm_up")
         screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(3, 2)
         quest_Note_1.quest_Show_String_For_Note_Small_Func(
@@ -696,6 +731,13 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType.down, function () {
     // //jwc o if (device_Type_Controller_Bool && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
     if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Controller_Joystick__ID_INT && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
+        images.createImage(`
+            . . . . .
+            . . . . .
+            # # . . .
+            . . # . .
+            . . . # #
+            `).showImage(0, 0)
         radio.sendString("arm_down")
         screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(1, 2)
         quest_Note_1.quest_Show_String_For_Note_Small_Func(
@@ -1374,6 +1416,13 @@ basic.forever(function () {
         // //jwc o if (device_Type_Controller_Bool && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
         if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Controller_Joystick__ID_INT && (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT)) {
             if (joystickbit.getButton(joystickbit.JoystickBitPin.P15)) {
+                images.createImage(`
+                    . . # . .
+                    . # # # .
+                    # . # . #
+                    . . # . .
+                    . . # . .
+                    `).showImage(0, 0)
                 quest_Note_1.quest_Show_String_For_Note_Big_Func(
                 "Controller_Joystick: gear_lo"
                 )
@@ -1384,6 +1433,13 @@ basic.forever(function () {
                 )
                 screen_PlotNewDot_ClearOldDot_WithHeartbeat_Func(2, 1)
             } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P14)) {
+                images.createImage(`
+                    . . # . .
+                    . . . # .
+                    # # # # #
+                    . . . # .
+                    . . # . .
+                    `).showImage(0, 0)
                 quest_Note_1.quest_Show_String_For_Note_Big_Func(
                 "Controller_Joystick: gear_hi"
                 )
