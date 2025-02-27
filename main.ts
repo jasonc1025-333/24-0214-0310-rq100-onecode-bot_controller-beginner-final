@@ -58,6 +58,9 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
             . . # . .
             . . . . .
             `).showImage(0, 0)
+        quest_Note_2.quest_Show_String_For_Note_Big_Func(
+        "Below Moddable: Motor Power_% [+/-100% max]"
+        )
         quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
         quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
         50,
@@ -71,6 +74,9 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
             . # # # .
             . . # . .
             `).showImage(0, 0)
+        quest_Note_2.quest_Show_String_For_Note_Big_Func(
+        "Below Moddable: Motor Power_% [+/-100% max]"
+        )
         quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
         quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
         -50,
@@ -84,6 +90,9 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
             . # . . .
             . . . . .
             `).showImage(0, 0)
+        quest_Note_2.quest_Show_String_For_Note_Big_Func(
+        "Below Moddable: Motor Power_% [+/-100% max]"
+        )
         quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
         quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
         0,
@@ -97,6 +106,9 @@ function bot_Servo_Motors_Basic_Fn (network_ReceivedString_FromControllerJoystic
             . . . # .
             . . . . .
             `).showImage(0, 0)
+        quest_Note_2.quest_Show_String_For_Note_Big_Func(
+        "Below Moddable: Motor Power_% [+/-100% max]"
+        )
         quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
         quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
         50,
@@ -228,8 +240,8 @@ function bot_Servo_Motors_Turbo_Fn (network_ReceivedString_FromControllerJoystic
                 . . # . .
                 . . # . .
                 `).showImage(0, 0)
-            quest_Note_2.quest_Show_String_For_Note_Small_Func(
-            "Next Block_Code Moddable: Forward-Max: Button-F"
+            quest_Note_2.quest_Show_String_For_Note_Big_Func(
+            "Below Moddable: Forward-Max: Button-F"
             )
             motor_Power_Full_Current_Pos = 100
             // //jwc o roboQuest.powerMotorsViaBlueRedBlackPins(PortGroup_BlueRedBlack__PortIds__Enum.S1_MotorLeft__S0_MotorRight, motor_Power_ZERO_INT, motor_Power_ZERO_INT)
@@ -272,8 +284,8 @@ function bot_Servo_Motors_Turbo_Fn (network_ReceivedString_FromControllerJoystic
                 . . . # .
                 . . # . .
                 `).showImage(0, 0)
-            quest_Note_2.quest_Show_String_For_Note_Small_Func(
-            "Next Block_Code Moddable: Turn-Max: Button-E"
+            quest_Note_2.quest_Show_String_For_Note_Big_Func(
+            "Below Moddable: Turn-Max: Button-E"
             )
             motor_Power_Full_Current_Pos = 100
             // //jwc o roboQuest.powerMotorsViaBlueRedBlackPins(PortGroup_BlueRedBlack__PortIds__Enum.S1_MotorLeft__S0_MotorRight, motor_Power_ZERO_INT, motor_Power_ZERO_INT)
@@ -792,8 +804,11 @@ images.createImage(`
     # # # # #
     . # . # .
     `).showImage(0, 0)
-quest_Note_1.quest_Show_String_For_Note_Small_Func(
-"Set GroupChannel_# (Bot_Id): Range [21 to 255], Default = 1"
+quest_Note_2.quest_Show_String_For_Note_Big_Func(
+"Below Moddable: GroupChannel_# (Bot_Id): ..."
+)
+quest_Note_2.quest_Show_String_For_Note_Small_Func(
+"... Range [21-255], Default = 1"
 )
 network_GroupChannel_MyBotAndController_Base0_Int = 1
 quest_Note_1.quest_Show_String_For_Note_Big_Func(
