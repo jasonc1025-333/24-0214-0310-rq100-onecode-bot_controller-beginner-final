@@ -407,11 +407,6 @@ function setup_VariablesAndConstants_UserCustomizableNot_Func () {
         )
     }
 }
-function setup_For_Staff_Func () {
-    quest_Note_1.quest_Show_String_For_Note_Small_Func(
-    "Below: Staff can Add Code for Setup"
-    )
-}
 input.onButtonPressed(Button.AB, function () {
     // //jwc o if (device_Type_Controller_Bool || device_Type_Bot_Bool) {
     if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Bot__ID_INT || _system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Controller_Joystick__ID_INT) {
@@ -593,6 +588,11 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
         )
     }
 })
+function setup_For_Teacher_Func () {
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "Below: Staff can Add Code for Setup"
+    )
+}
 function setup_For_System_Func () {
     if (true) {
         setup_VariablesAndConstants_UserCustomizableNot_Func()
@@ -738,7 +738,7 @@ quest_Note_2.quest_Show_String_For_Note_Small_Func(
 )
 network_GroupChannel_MyBotAndController_Base0_Int = 1
 setup_For_System_Func()
-setup_For_Staff_Func()
+setup_For_Teacher_Func()
 quest_Note_1.quest_Show_String_For_Note_Big_Func(
 "©️ 2025 Quest Institute. All rights reserved."
 )
