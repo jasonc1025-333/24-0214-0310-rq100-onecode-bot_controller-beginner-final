@@ -14,11 +14,6 @@ function screen_Clear_Func () {
         }
     }
 }
-function setup_ForStaff_Func () {
-    quest_Note_1.quest_Show_String_For_Note_Small_Func(
-    "Below: Staff can Add Code for Setup"
-    )
-}
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     if (true) {
         quest_Note_3.quest_Show_String_For_Note_Big_Func(
@@ -412,95 +407,10 @@ function setup_VariablesAndConstants_UserCustomizableNot_Func () {
         )
     }
 }
-function setup_ForStudent_Func () {
-    quest_Note_2.quest_Show_String_For_Note_Big_Func(
-    "Below: Student can Add Code for Setup"
+function setup_For_Staff_Func () {
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "Below: Staff can Add Code for Setup"
     )
-}
-function setup_ForSystem_Func () {
-    if (true) {
-        setup_VariablesAndConstants_UserCustomizableNot_Func()
-        setup_Network_Func()
-setup_BotAndController_Func()
-    }
-    if (true) {
-        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
-        network_GroupChannel_MyBotAndController_Base0_Int,
-        quest_Toggle_OnOff_Enum.On,
-        quest_Debug_Show_Enum.Dashboard_OLED
-        )
-    }
-    if (true) {
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "AAA-1: Next Block_Code Moddable..."
-        )
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "...Data-Dashboard: Row-1: Title"
-        )
-        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
-        "Data-Dashboard :)",
-        0,
-        0
-        )
-    }
-    if (true) {
-        quest_Note_1.quest_Show_String_For_Note_Small_Func(
-        "GeekServo-360-Degrees-2kg: start at 180"
-        )
-        quest_Note_1.quest_Show_String_For_Note_Small_Func(
-        "Start w/ Label 'GeekServo' facing out for Servo_Arm_Left, for 180-degrees to face forward for optimum range"
-        )
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "BBB-1: Next Block_Code Moddable..."
-        )
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "...Servo-Arm: 1-of-3: Default (degrees)"
-        )
-        servoArm_DEFAULT_DEGREES_INT = 180
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "BBB-2: Next Block_Code Moddable..."
-        )
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "...Servo-Arm: 2-of-3: Up-Max (degrees)"
-        )
-        servoArm_UP_MAX_DEGREES_INT = 360
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "BBB-3: Next Block_Code Moddable..."
-        )
-        quest_Note_4.quest_Show_String_For_Note_Small_Func(
-        "...Servo-Arm: 3-of-3: Down-Max (degrees)"
-        )
-        servoArm_DOWN_MAX_DEGREES_INT = 0
-        quest_Note_1.quest_Show_String_For_Note_Small_Func(
-        "Servo-Arm: GeekServo_360_Degrees: Default"
-        )
-        servoArm_Now_Degrees_Int = servoArm_DEFAULT_DEGREES_INT
-        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S7, servoArm_Now_Degrees_Int)
-        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
-        "Arm-L:" + "Default= " + servoArm_Now_Degrees_Int,
-        0,
-        3
-        )
-        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
-        "Arm-R:",
-        0,
-        4
-        )
-    }
-    if (true) {
-        quest_Note_6.quest_Show_String_For_Note_Big_Func(
-        "Level 1: Variables_n_Constants_Not (Hardcode)"
-        )
-        quest_Note_6.quest_Show_String_For_Note_Small_Func(
-        "For exclusive activation, place this 'on start' stack higher than other 'on start' stacks"
-        )
-        quest_Note_6.quest_Show_String_For_Note_Small_Func(
-        "Bot & Controller_Joystick Stack: 'on start'"
-        )
-        quest_Note_6.quest_Show_String_For_Note_Small_Func(
-        "setup_VariablesAndConstants_UserCustomizable: Yes"
-        )
-    }
 }
 input.onButtonPressed(Button.AB, function () {
     // //jwc o if (device_Type_Controller_Bool || device_Type_Bot_Bool) {
@@ -683,10 +593,100 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
         )
     }
 })
+function setup_For_System_Func () {
+    if (true) {
+        setup_VariablesAndConstants_UserCustomizableNot_Func()
+        setup_Network_Func()
+setup_BotAndController_Func()
+    }
+    if (true) {
+        quest_Dashboard.quest_Send_LoginOfBot_ToXrayDashboardOfMb_Func(
+        network_GroupChannel_MyBotAndController_Base0_Int,
+        quest_Toggle_OnOff_Enum.On,
+        quest_Debug_Show_Enum.Dashboard_OLED
+        )
+    }
+    if (true) {
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "AAA-1: Next Block_Code Moddable..."
+        )
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "...Data-Dashboard: Row-1: Title"
+        )
+        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+        "Data-Dashboard :)",
+        0,
+        0
+        )
+    }
+    if (true) {
+        quest_Note_1.quest_Show_String_For_Note_Small_Func(
+        "GeekServo-360-Degrees-2kg: start at 180"
+        )
+        quest_Note_1.quest_Show_String_For_Note_Small_Func(
+        "Start w/ Label 'GeekServo' facing out for Servo_Arm_Left, for 180-degrees to face forward for optimum range"
+        )
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "BBB-1: Next Block_Code Moddable..."
+        )
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "...Servo-Arm: 1-of-3: Default (degrees)"
+        )
+        servoArm_DEFAULT_DEGREES_INT = 180
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "BBB-2: Next Block_Code Moddable..."
+        )
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "...Servo-Arm: 2-of-3: Up-Max (degrees)"
+        )
+        servoArm_UP_MAX_DEGREES_INT = 360
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "BBB-3: Next Block_Code Moddable..."
+        )
+        quest_Note_4.quest_Show_String_For_Note_Small_Func(
+        "...Servo-Arm: 3-of-3: Down-Max (degrees)"
+        )
+        servoArm_DOWN_MAX_DEGREES_INT = 0
+        quest_Note_1.quest_Show_String_For_Note_Small_Func(
+        "Servo-Arm: GeekServo_360_Degrees: Default"
+        )
+        servoArm_Now_Degrees_Int = servoArm_DEFAULT_DEGREES_INT
+        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S7, servoArm_Now_Degrees_Int)
+        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+        "Arm-L:" + "Default= " + servoArm_Now_Degrees_Int,
+        0,
+        3
+        )
+        quest_Dashboard.quest_Show_String_For_Oled_SmallFont_Func(
+        "Arm-R:",
+        0,
+        4
+        )
+    }
+    if (true) {
+        quest_Note_6.quest_Show_String_For_Note_Big_Func(
+        "Level 1: Variables_n_Constants_Not (Hardcode)"
+        )
+        quest_Note_6.quest_Show_String_For_Note_Small_Func(
+        "For exclusive activation, place this 'on start' stack higher than other 'on start' stacks"
+        )
+        quest_Note_6.quest_Show_String_For_Note_Small_Func(
+        "Bot & Controller_Joystick Stack: 'on start'"
+        )
+        quest_Note_6.quest_Show_String_For_Note_Small_Func(
+        "setup_VariablesAndConstants_UserCustomizable: Yes"
+        )
+    }
+}
+function setup_For_Student_Func () {
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below: Student can Add Code for Setup"
+    )
+}
+let servoArm_DEFAULT_DEGREES_INT = 0
 let network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = 0
 let network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = 0
 let network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = 0
-let servoArm_DEFAULT_DEGREES_INT = 0
 let servoArm_Right_Up_Bool = false
 let servoArm_Left_Up_Bool = false
 let servoArm_Right_UP_DEGREES_INT = 0
@@ -737,12 +737,12 @@ quest_Note_2.quest_Show_String_For_Note_Small_Func(
 "... Range [21-255], Default = 1"
 )
 network_GroupChannel_MyBotAndController_Base0_Int = 1
-setup_ForSystem_Func()
-setup_ForStaff_Func()
+setup_For_System_Func()
+setup_For_Staff_Func()
 quest_Note_1.quest_Show_String_For_Note_Big_Func(
 "©️ 2025 Quest Institute. All rights reserved."
 )
-setup_ForStudent_Func()
+setup_For_Student_Func()
 basic.forever(function () {
     quest_Note_6.quest_Show_String_For_Note_Big_Func(
     "'On Logo Pressed'"
