@@ -19,7 +19,7 @@
 # A. Build
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/25-0714-1930-Rq100ConstructBot-InteractiveAnimation-OnshapeCadasio-Gif-1280x640-10fps.gif?raw=true)
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2025-07-14_21-02-15-ClickBelowForTutorialWebLink-325x213.png?raw=true)
-### [\* A-1 Tutorial Web-Link 1 of 3 (click me) \*](https://quest-and-vcs-rnd.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final--quest-n-vcs-rnd/)
+### [\* A-1 Tutorial Web-Link 1 of 3 (click me) \*](https://instructions.online/?id=4610-rq100-23-0328-0530-now)
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-01_20-09-20-OledDataDashboard-ConnectTo-MicrobitIoExpansionBoard.png?raw=true)
 <!--- Need following dummy blank line above for this upcoming divider_line to work --->
 
