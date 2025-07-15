@@ -1,6 +1,6 @@
 {
     "name": "24-0214-0310-rq100-onecode-bot_controller-beginner-final (v1.8.0, 25-0714-2130)",
-    "version": "1.8.0",
+    "version": "1.8.1",
     "description": "",
     "dependencies": {
         "core": "*",
