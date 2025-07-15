@@ -1,17 +1,62 @@
+<!-- NOTE: jwc 24-1209-1400 '##' not header effective -->
+
 <!---  ![AltTag](24-0325-2140-Makecode-ClickToCloseSidePanel-2024-03-25_21-40-43.png) --->
 <!--- add suffix '?raw=true' --->
 
-# **** ** Right-Side Panel-Guide ** 
-### [( Right-Side Panel-Guide Separate Web-Page )](https://jasonc1025-333.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final/)
+# ** Sample Tutorial ** 
+### [( Separate Web-Page )](https://quest-and-vcs-rnd.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final--quest-n-vcs-rnd/)
 
-# A. Coding-Editor Setup:
-![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-03_01-20-51-Close-LeftSidePanel-05-Blur20.png?raw=true)
+# Table of Contents (3 Basic Stages): 
+#### * A. Build (HW)
+#### * B. Code (SW)
+#### * C. Integrate A & B
+#### *  
+#### * D. Troubleshooting
+#### * E. Bonus
+<!--- Need following dummy blank line above for this upcoming divider_line to work --->
 
+---
+# A. Build
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/25-0714-1930-Rq100ConstructBot-InteractiveAnimation-OnshapeCadasio-Gif-1280x640-10fps.gif?raw=true)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2025-07-14_21-02-15-ClickBelowForTutorialWebLink-325x213.png?raw=true)
+### [\* A-1 Tutorial Web-Link 1 of 3 (click me) \*](https://quest-and-vcs-rnd.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final--quest-n-vcs-rnd/)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-01_20-09-20-OledDataDashboard-ConnectTo-MicrobitIoExpansionBoard.png?raw=true)
+<!--- Need following dummy blank line above for this upcoming divider_line to work --->
+
+---
+# B. Code
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/RQ100-CodeEditor-Setup-FlashDownload_ManualOverride-25-0214-1430-ADB_a-TYJ-Zoom-1280x720-30fps.gif?raw=true)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2025-07-14_21-02-15-ClickBelowForTutorialWebLink-325x213.png?raw=true)
+### [\* B.1 Tutorial Web-Link  2 of 3 (click me) \*](https://quest-and-vcs-rnd.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final--quest-n-vcs-rnd/)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-03_06-51-58-OledDataDashboard-Coding-02-LineWidth_4px-BlueOpacity_60.png?raw=true)
 <!--- Need following dummy blank line above for this upcoming divider_line to work --->
 
 --- 
+# C. Integrate A & B
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/25-0714-1930-Rq100ConstructBot-InteractiveAnimation-OnshapeCadasio-Gif-1280x640-10fps.gif?raw=true)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2025-07-14_21-02-15-ClickBelowForTutorialWebLink-325x213.png?raw=true)
+### [\* C.1 Tutorial Web-Link  3 of 3 (click me) \*](https://quest-and-vcs-rnd.github.io/24-0214-0310-rq100-onecode-bot_controller-beginner-final--quest-n-vcs-rnd/)
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/11i-Media-24-0710-1300/24-0719-0630-Rq100-NetworkPairing-StartupScrollingText-Gif-480x240-ClipSpeed_1pt5-03.gif?raw=true)
 
-# B. Can Mod the Code-Block Right After A Bright-Green Comment-Block:
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-02_17-12-59-NetworkPair-Startup_Poster-2840x2928.png?raw=true)
+<!--- Need following dummy blank line above for this upcoming divider_line to work --->
+
+--- 
+# D. Troubleshooting
+<!-- # * D-1. Check Bot's Battery is 3-of-4 Bars & Controller-Joystick's Power Light (Next to Power Switch) is On -->
+# * D-1. Check Bot's Battery is 3-of-4 Bars...
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-02_15-40-19-IoExpansionBoard_Wukong-Power_Minimum-3-out-of-4.png?raw=true)
+
+# * D-2. If Network-Pairing still Failing, Then...
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-02_14-50-24-TurnBothOff_3Sec-ThenBothOn.png?raw=true)
+
+# * D-3. And Then...
+![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/2024-10-02_17-12-59-NetworkPair-Startup_Poster-2840x2928.png?raw=true)
+<!--- Need following dummy blank line above for this upcoming divider_line to work --->
+
+---
+# E. Bonus
+
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/11i-Media-24-0710-1300/2024-07-12_06-52-01.png-LookForBrightGreenComment_Block.png?raw=true)
 # B-1. ___Basic Required:___ Modding/Coding ~ 'Lesson 02: Joy Ride' & 'Lesson 05: Sumo':
 ![](https://github.com/jasonc1025-333/24-0214-0310-rq100-onecode-bot_controller-beginner-final/blob/master/11i-Media-24-0710-1300/2024-07-09_19-07-46-EasyToCode-FastToDrive-ModGroupChannelNum-02.png?raw=true)

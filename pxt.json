@@ -1,5 +1,5 @@
 {
-    "name": "24-0214-0310-rq100-onecode-bot_controller-beginner-final (25-0304-2030: v1.7.2)",
+    "name": "24-0214-0310-rq100-onecode-bot_controller-beginner-final (v1.8.0, 25-0714-2130)",
     "version": "1.7.2",
     "description": "",
     "dependencies": {
@@ -23,7 +23,7 @@
         "branch": "v6.0.19",
         "tag": "v6.0.19",
         "commits": "https://github.com/microsoft/pxt-microbit/commits/19507cc84a19f2a882b2fbe58b4ae3a5cb79cbf9",
-        "target": "7.0.57",
+        "target": "7.0.61",
         "pxt": "9.0.12",
         "targetId": "microbit"
     },
