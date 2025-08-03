@@ -8,7 +8,8 @@
         "microphone": "*",
         "23-1006-1820-RQ100-QuestCustomBlocks-Wukong-Oled": "github:jasonc1025-333/23-1006-1820-rq100-questcustomblocks-wukong-oled#v0.20.0",
         "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.2",
-        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6"
+        "microbit-pxt-rotate": "github:bsiever/microbit-pxt-rotate#v0.1.6",
+        "motobit": "github:sparkfun/pxt-moto-bit#v0.0.4"
     },
     "files": [
         "main.blocks",
@@ -23,7 +24,7 @@
         "branch": "v6.0.19",
         "tag": "v6.0.19",
         "commits": "https://github.com/microsoft/pxt-microbit/commits/19507cc84a19f2a882b2fbe58b4ae3a5cb79cbf9",
-        "target": "7.0.61",
+        "target": "8.0.13",
         "pxt": "9.0.12",
         "targetId": "microbit"
     },

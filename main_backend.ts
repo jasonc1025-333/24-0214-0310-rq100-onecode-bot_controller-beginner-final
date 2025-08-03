@@ -15,7 +15,11 @@ let _local_new_x_int = 0
 ////jwc o let device_Mode_Show_Alt_GroupChannelNum_Bool = false
 let _debug_Serial_Print_Bool = false
 ////jwc o let network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = 0
+let network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = 0
 ////jwc o let network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = 0
+let network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = 0
+//// jwc \/
+let network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = 0
 let controller_Joystick__Cartesian_OriginAtCenter__Y_Int = 0
 let controller_Joystick__Cartesian_OriginAtCenter__X_Int = 0
 let _local_converted_value_int_out = 0

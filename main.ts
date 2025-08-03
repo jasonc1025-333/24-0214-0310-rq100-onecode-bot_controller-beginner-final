@@ -228,29 +228,12 @@ function bot_Servo_Motors_Turbo_Fn (network_ReceivedString_FromControllerJoystic
 }
 input.onButtonPressed(Button.A, function () {
     if (true) {
-        quest_Note_1.quest_Show_String_For_Note_Small_Func(
-        "Important Coding Note: Only 1 Input Stack for Button A||B Allowed for 'main/main_backend.ts'"
-        )
-        if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT) {
-            quest_Note_3.quest_Show_String_For_Note_Big_Func(
-            "Buttons A & B Dual Usage: Usage #2: Given Network_Paired, Increment 'GroupChannelNum' when in Respective Edit Mode"
-            )
-            device_Mode_Edit_GroupChannelNum_ButtonA_Func()
-        } else if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Null__ID_INT) {
-            quest_Note_3.quest_Show_String_For_Note_Big_Func(
-            "Buttons A & B Dual Usage: Usage #1: Designate this micro:bit as Controller_Joystick to *Start* Network_Pairing w/ Bot"
-            )
-            quest_Note_1.quest_Show_String_For_Note_Big_Func(
-            "Code Activation of Controller_Joystick:: 1of2 : 1st micro:bit Being Pressed of Button A||B is Designated as Device:Controller_Joystick"
-            )
-            _system_Hw_DeviceType__Now__Id_Int = _system_Hw_DeviceType__Controller_Joystick__ID_INT
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT
-            screen_Clear_Func()
-            setup_ControllerOnly_Func()
-        }
-        quest_Note_6.quest_Show_String_For_Note_Big_Func(
-        "Level 2.1: Variables_n_Constants_Yes"
-        )
+        pins.servoWritePin(AnalogPin.P15, 0)
+        pins.servoWritePin(AnalogPin.P16, 0)
+    }
+    if (true) {
+        pins.servoWritePin(AnalogPin.P12, 0)
+        pins.servoWritePin(AnalogPin.P14, 0)
     }
 })
 // BUG FIX: Switch from BlockCode vs TextCode
@@ -408,77 +391,14 @@ function setup_VariablesAndConstants_UserCustomizableNot_Func () {
     }
 }
 input.onButtonPressed(Button.AB, function () {
-    // //jwc o if (device_Type_Controller_Bool || device_Type_Bot_Bool) {
-    if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Bot__ID_INT || _system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Controller_Joystick__ID_INT) {
-        // //jwc o device_Mode_Edit__GroupChannelNum__Bool = !(device_Mode_Edit__GroupChannelNum__Bool)
-        // //jwc o if (!(device_Mode_Edit__GroupChannelNum__Bool)) {
-        // //jwc o     quest_Note_2.quest_Show_String_For_Note_Small_Func(
-        // //jwc o         "If just left 'groupChannel_Edit_Mode', then Reset 'radio set group'"
-        // //jwc o     )
-        // //jwc o     network_GroupChannel_MyBotAndController_Base0_Int = network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int * 10 + network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int * 1
-        // //jwc o     radio.setGroup(network_GroupChannel_MyBotAndController_Base0_Int)
-        // //jwc o } else {
-        // //jwc o     quest_Note_2.quest_Show_String_For_Note_Small_Func(
-        // //jwc o         "If just entered 'groupChannel_Edit_Mode':"
-        // //jwc o     )
-        // //jwc o     network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int, 10)
-        // //jwc o     network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = network_GroupChannel_MyBotAndController_Base0_Int % 10
-        // //jwc o }
-        // //jwc o network_GroupChannel_Show_Func()
-        if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT || _system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT) {
-            quest_Note_1.quest_Show_String_For_Note_Small_Func(
-            "Just entered the above_conditioned 'if then' state and will process accordingly as needed:"
-            )
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT
-            network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int, 100)
-            network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int - network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100, 10)
-            network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int - (network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100 + network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int * 10), 1)
-            if (true) {
-                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                "Since not enough input buttons to allow manual override of hundreds_digit, will override hundreds_digit to always be 0, to stabilize at a known value"
-                )
-                network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = 0
-            }
-        } else if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT) {
-            quest_Note_1.quest_Show_String_For_Note_Small_Func(
-            "Just entered the above_conditioned 'if then' state and will process accordingly as needed:"
-            )
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT
-            network_GroupChannel_MyBotAndController_Base0_Int = network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100 + (network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int * 10 + network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int * 1)
-            radio.setGroup(network_GroupChannel_MyBotAndController_Base0_Int)
-        }
-    } else if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Null__ID_INT) {
-        // //jwc debug: serial.writeLine("HW_Null: SW_Null >> SW_Edit")
-        // //jwc debug: serial.writeLine("HW_Null: SW_Edit >> SW_Null")
-        if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Null__ID_INT) {
-            quest_Note_1.quest_Show_String_For_Note_Small_Func(
-            "Just entered the above_conditioned 'if then' state and will process accordingly as needed:"
-            )
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT
-            network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int, 100)
-            network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int - network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100, 10)
-            network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = Math.idiv(network_GroupChannel_MyBotAndController_Base0_Int - (network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100 + network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int * 10), 1)
-            if (true) {
-                quest_Note_1.quest_Show_String_For_Note_Small_Func(
-                "Since not enough input buttons to allow manual override of hundreds_digit, will override hundreds_digit to always be 0, to stabilize at a known value"
-                )
-                network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = 0
-            }
-        } else if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT) {
-            quest_Note_1.quest_Show_String_For_Note_Small_Func(
-            "Just entered the above_conditioned 'if then' state and will process accordingly as needed:"
-            )
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Null__ID_INT
-            network_GroupChannel_MyBotAndController_Base0_Int = network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int * 100 + (network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int * 10 + network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int * 1)
-            radio.setGroup(network_GroupChannel_MyBotAndController_Base0_Int)
-        }
+    if (true) {
+        pins.servoWritePin(AnalogPin.P15, 90)
+        pins.servoWritePin(AnalogPin.P16, 90)
     }
-    if (false) {
-        serial.writeLine("24-0714-2351> " + network_GroupChannel_MyBotAndController_Base0_Int + " " + network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int + " " + network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int + " " + network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int)
+    if (true) {
+        pins.servoWritePin(AnalogPin.P12, 90)
+        pins.servoWritePin(AnalogPin.P14, 90)
     }
-    quest_Note_6.quest_Show_String_For_Note_Big_Func(
-    "Level 2.1: Variables_n_Constants_Yes"
-    )
 })
 radio.onReceivedString(function (receivedString) {
     if (true) {
@@ -528,30 +448,12 @@ radio.onReceivedString(function (receivedString) {
 })
 input.onButtonPressed(Button.B, function () {
     if (true) {
-        quest_Note_1.quest_Show_String_For_Note_Small_Func(
-        "Important Coding Note: Only 1 Input Stack for Button A||B Allowed for 'main/main_backend.ts'"
-        )
-        // //jwc o if (!(device_Type_Controller_Bool) && !(device_Type_Bot_Bool)) {
-        if (_system_Sw_ModeState__Now__Id_Int == _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT) {
-            quest_Note_3.quest_Show_String_For_Note_Big_Func(
-            "'Buttons A & B' Dual Usage: Usage #2: Given Network_Paired, Increment 'GroupChannelNum' when in Respective Edit Mode"
-            )
-            device_Mode_Edit_GroupChannelNum_ButtonB_Func()
-        } else if (_system_Hw_DeviceType__Now__Id_Int == _system_Hw_DeviceType__Null__ID_INT) {
-            quest_Note_3.quest_Show_String_For_Note_Big_Func(
-            "'Buttons A & B' Dual Usage: Usage #1: Designate this micro:bit as Controller_Joystick to *Start* Network_Pairing w/ Bot"
-            )
-            quest_Note_1.quest_Show_String_For_Note_Big_Func(
-            "Code Activation of Controller_Joystick:: 1of2 : 1st micro:bit Being Pressed of Button A||B is Designated as Device:Controller_Joystick"
-            )
-            _system_Hw_DeviceType__Now__Id_Int = _system_Hw_DeviceType__Controller_Joystick__ID_INT
-            _system_Sw_ModeState__Now__Id_Int = _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT
-            screen_Clear_Func()
-            setup_ControllerOnly_Func()
-        }
-        quest_Note_6.quest_Show_String_For_Note_Big_Func(
-        "Level 2.1: Variables_n_Constants_Yes"
-        )
+        pins.servoWritePin(AnalogPin.P15, 180)
+        pins.servoWritePin(AnalogPin.P16, 180)
+    }
+    if (true) {
+        pins.servoWritePin(AnalogPin.P12, 180)
+        pins.servoWritePin(AnalogPin.P14, 180)
     }
 })
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P13, joystickbit.ButtonType.down, function () {
@@ -682,9 +584,6 @@ function setup_For_Student_Func () {
 	
 }
 let servoArm_DEFAULT_DEGREES_INT = 0
-let network_GroupChannel_MyBotAndController_Base0__Digit_Ones__Int = 0
-let network_GroupChannel_MyBotAndController_Base0__Digit_Tens__Int = 0
-let network_GroupChannel_MyBotAndController_Base0__Digit_Hundreds__Int = 0
 let servoArm_Right_Up_Bool = false
 let servoArm_Left_Up_Bool = false
 let servoArm_Right_UP_DEGREES_INT = 0
@@ -693,7 +592,9 @@ let servoArm_Now_Degrees_Int = 0
 let motor_Power_Gear_02_MAX = 0
 let motor_Power_Gear_01_MAX = 0
 let _system_Sw_ModeState__Test__ID_INT = 0
+let _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT = 0
 let _system_Sw_ModeState__Autonomous__ID_INT = 0
+let _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT = 0
 let _system_Sw_ModeState__Run__AndShow_01_DeviceType__ID_INT = 0
 let _system_Sw_ModeState__Null__ID_INT = 0
 let screen_Delay_MSEC_INT = 0
@@ -706,12 +607,10 @@ let controller__Polar_OriginAtCenter__MagnitudePixel__Int = 0
 let controller__Polar_OriginAtCenter__AngleDegree__AsIncremented_By__Int = 0
 let controller__Polar_OriginAtCenter__AngleDegree__Int = 0
 let controller__Polar_OriginAtCenter__MagnitudePixel__IdleDeadzone_Max512__INT = 0
-let _system_Hw_DeviceType__Bot__ID_INT = 0
-let _system_Sw_ModeState__Run__AndShow_02_GroupChannelNum__ID_INT = 0
-let _system_Hw_DeviceType__Controller_Joystick__ID_INT = 0
-let _system_Hw_DeviceType__Null__ID_INT = 0
 let _system_Hw_DeviceType__Now__Id_Int = 0
-let _system_Sw_ModeState__Edit_GroupChannelNum__ID_INT = 0
+let _system_Hw_DeviceType__Controller_Joystick__ID_INT = 0
+let _system_Hw_DeviceType__Bot__ID_INT = 0
+let _system_Hw_DeviceType__Null__ID_INT = 0
 let servoArm_DOWN_MAX_DEGREES_INT = 0
 let servoArm_UP_MAX_DEGREES_INT = 0
 let _system_Sw_ModeState__Reset__ID_INT = 0
@@ -721,6 +620,10 @@ let screen_XY_Brightness_Old_Num = 0
 let screen_Y_Old_Num = 0
 let screen_X_Old_Num = 0
 let network_GroupChannel_MyBotAndController_Base0_Int = 0
+basic.showIcon(IconNames.Heart)
+quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
+basic.showIcon(IconNames.Happy)
+quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(2, quest_Time_Units_Enum.Seconds)
 images.createImage(`
     . # . # .
     # # # # #
@@ -736,6 +639,14 @@ quest_Note_2.quest_Show_String_For_Note_Small_Func(
 )
 network_GroupChannel_MyBotAndController_Base0_Int = 1
 setup_For_System_Func()
+if (true) {
+    pins.servoWritePin(AnalogPin.P12, 90)
+    pins.servoWritePin(AnalogPin.P14, 90)
+}
+if (true) {
+    pins.servoWritePin(AnalogPin.P15, 90)
+    pins.servoWritePin(AnalogPin.P16, 90)
+}
 setup_For_Teacher_Func()
 quest_Note_1.quest_Show_String_For_Note_Big_Func(
 "©️ 2025 Quest Institute. All rights reserved."
